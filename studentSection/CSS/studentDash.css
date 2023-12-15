@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --purple: #8a2be2;
+    --light-purple: #c376f7;
+    --light-opaque-purple: #a0a0ff57;
+}
+*{
+    /* font-family: 'Recoleta', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+}
+.nav li .active-page  {
+    background-color: #8a2be2;
+    color: #fff;
+    border-radius: 5px;
+}
+.active-page{
+    background-color: #8a2be2;
+    color: #fff;
+    border-radius: 5px;
+}
+.nav li .link-purple{
+    color: black;
+    cursor: pointer;
+}
+.link-purple{
+    color: white;
+    cursor: pointer;
+}
+.link-purple:hover{
+    background: #8a2be2;
+    color: white;
+    border-radius: 5px;
+}
+.bor-2{
+    border-radius: 20px;
+}
+.bor-1{
+    border-radius: 12px;
+}
+.nav li .nav-link:hover{
+    background: #8a2be2;
+    color: white;
+    border-radius: 5px;
+}
+.text-purple{
+    color: #8a2be2;
+}
+.bg-purple{
+    background-color: #8a2be2;
+    border-radius: 10px;
+}
+.bg-light-purple{
+    background: #c376f7;
+    border-radius: 10px;
+}
+.btn-outline-purple{
+    background-color: #8a2be2;
+    color: white;
+    border-radius: 5px;
+}
+.btn-outline-purple:hover{
+    background: #8a2be2;
+    color: white;
+}
+.card{
+    height: 100%;
+}
+.outline-purple{
+    border: 1px solid #8a2be2;
+    border-radius: 10px;
+}
+.outline-purple-bold{
+    border: 3px solid #892be2be;
+    border-radius: 30px;
+}
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.border-left-purple{
+    border-left: 5px solid #5d3891;
+}
+.border-left-orange{
+    border-left: 5px solid #f99417;
+}
+.text-orange{
+    color: #f99417;
+} 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, 0px); }   
+}
+
+/* .posi-rel{
+    position: relative;
+    left: 10px;
+} */

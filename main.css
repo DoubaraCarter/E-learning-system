@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --purple: #8a2be2;
+    --light-purple: #a0a0ff;
+    --light-opaque-purple: #a0a0ff57;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.land-body{
+    background: linear-gradient(to top left, whitesmoke, #dddcdc);
+}
+.nav li .active  {
+    background-color: var(--purple);
+    color: #fff;
+    border-radius: 5px;
+}
+.link-purple{
+    color: var(--purple);
+    cursor: pointer;
+}
+/* .bor-2{
+    border-radius: 20px;
+}
+.bor-1{
+    border-radius: 12px;
+} */
+.nav .nav-link:hover{
+    background: var(--purple);
+    border-radius: 5px;
+    color: #fff;
+}
+.text-purple{
+    color: var(--purple);
+}
+.bg-purple{
+    background-color: var(--purple);
+}
+.bg-light-purple{
+    background: var(--purple);
+    border-radius: 5px;
+}
+.btn-purple{
+    border: none;
+    background-color: var(--purple);
+    border-radius: 5px;
+    color: #fff;
+}
+.btn-purple:hover{
+    border: none;
+    background-color: #7123b9;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn-outline-purple{
+    border: 1px solid var(--purple);
+    color: #000;
+    border-radius: 5px;
+}
+.btn-outline-purple:hover{
+    background: var(--purple);
+    color: white;
+}
+.card{
+    width: 19rem;
+}
+.outline-purple{
+    border: 1px solid var(--light-opaque-purple);
+    border-radius: 10px;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, 0px); }   
+}
