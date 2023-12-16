@@ -11,30 +11,43 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="d-none d-lg-block px-5 mb-5">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <div class="col-md-3 mb-2 mb-md-0">
-            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-              <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-            </a>
+    <nav class="navbar navbar-expand-lg bg-light py-3 position-sticky sticky-top border border-bottom" aria-label="Offcanvas navbar large">
+      <div class="px-lg-5 container-fluid">
+        <a class="navbar-brand fs-4 fw-bold" href="#">Tutor.Me</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasNavbar2Label">Tutor.Me</h5>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-    
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-purple active">Home</a></li>
-            <li><a href="#" class="nav-link link-dark px-2">Features</a></li>
-            <li><a href="#" class="nav-link link-dark px-2">About us</a></li>
-            <li><a href="#" class="nav-link link-dark px-2">Contact us</a></li>
-          </ul>
-    
-          <div class="col-md-3 text-end">
-            <button type="button" class="btn-outline-purple px-3 py-1 me-2">Login</button>
-            <button type="button" class="btn-purple px-3 py-1">Sign-up</button>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link px-2 active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark px-2" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark px-2" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark px-2" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="col-md-3 text-end">
+              <button type="button" class="btn-outline-purple px-3 py-1 me-2">Login</button>
+              <button type="button" class="btn-purple px-3 py-1">Sign-up</button>
+            </div>
           </div>
-        </header>
-    </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
-    <div class="col-xxl-8 px-2 px-lg-5 bg-purple">
+    <div class="col-xxl-8 pt-5 px-2 px-lg-5 bg-purple" style="height: 100vh;">
       <div class="d-flex flex-column flex-lg-row-reverse align-items-center g-5 py-4">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="./media/images/undraw_online_learning_re_qw08.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -59,7 +72,7 @@
           <div class="col d-flex flex-column align-items-center align-items-lg-start gap-2">
             <h1 class="fw-bold text-body-emphasis">Navigating Success: Embracing E-learnings Advantages</h1>
             <p class="">Discover a transformative learning experience with our dynamic platform. Engage in interactive courses and resources, receiving personalized support. Thrive in an ever-evolving world of knowledge and skills with our commitment to excellence.</p>
-            <a href="#" class="btn btn-outline-primary btn-lg mb-4 m-lg-0">Learn More</a>
+            <button class="btn-outline-purple py-2 px-3 mb-4 m-lg-0">Learn More</button>
           </div>
     
           <div class="col">
@@ -122,7 +135,7 @@
                   <div class="card-body">
                     <p class="card-text lead fw-bold">Introduction to Machine Learning</p>
                     <p class="pb-4 mb-4">20 hours</p>
-                    <button class="btn btn-primary">Enroll</button>
+                    <button class="btn-purple px-3 py-2">Enroll</button>
                   </div>
                 </div>
               </div>
@@ -130,9 +143,9 @@
                 <div class="card shadow-sm w-100 h-100">
                   <img src="./media/images/Artificial-intelligence.jpg" height="225" width="100%" alt="">
                   <div class="card-body">
-                    <p class="card-text lead fw-bold">Basics of Artificial Intelligence</p>
+                    <p class="card-text lead fw-bold">Introduction to Artificial Intelligence</p>
                     <p class="pb-4 mb-4">2 Weeks</p>
-                    <button class="btn btn-primary">Enroll</button>
+                    <button class="btn-purple px-3 py-2">Enroll</button>
                   </div>
                 </div>
               </div>
@@ -140,9 +153,9 @@
                 <div class="card shadow-sm w-100 h-100">
                   <img src="./media/images/cyberSecurity.avif" height="225" width="100%" alt="">
                   <div class="card-body">
-                    <p class="card-text lead fw-bold">Cybersecurity Engineering</p>
+                    <p class="card-text lead fw-bold">Basics of Cybersecurity Engineering</p>
                     <p class="pb-4 mb-4">19 hours</p>
-                    <button class="btn btn-primary">Enroll</button>
+                    <button class="btn-purple px-3 py-2">Enroll</button>
                 </div>
               </div>
             </div>
@@ -152,19 +165,98 @@
     </div>
 
     <!-- Testimonials Section -->
-    <div class="col-xxl-8 px-lg-5 bg-light-purple">
+    <div class="col-xxl-8 px-lg-5 mb-2 pb-5 border border-bottom">
       <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <h1 class="fw-bold text-light mb-3 text-center text-lg-start">Gain Insights directly from other learners</h1>
+          <h1 class="fw-bold mb-3 text-center text-lg-start">Gain Insights directly from other learners</h1>
         </div>
         <div class="col-lg-5">
-          <p class="text-light text-center text-lg-start">Acquire firsthand insights directly from participants, enriching your understanding and enhancing your learning experience.</p>
+          <p class="text-center text-lg-start">Acquire firsthand insights directly from participants, enriching your understanding and enhancing your learning experience.</p>
         </div>
       </div>
 
-      
-    </div>
+      <div class="d-flex flex-column flex-lg-row justify-content-lg-between py-4 bg-light-purple rounded rounded-4">
+        <div class="col-lg-4 px-3 py-3 text-light text-center">
+          <div class="d-flex align-items-center justify-content-center mb-2">
+            <img src="./media/images/pfp-1.png" class="img-fluid d-block rounded rounded-circle" width="140" height="140" alt="">
+          </div>
+          <h4 class="fw-normal">Richard M.</h4>
+          <p class="fst-italic">"It transformed my career. Engaging content, interactive features, and expert guidance made learning enjoyable and effective. Highly recommended!"</p>
+        </div>
+        <div class="d-none d-lg-block col-lg-4 px-3 py-3 text-light text-center">
+          <div class="d-flex align-items-center justify-content-center mb-2">
+            <img src="./media/images/pfp-2.png" class="img-fluid d-block rounded rounded-circle" width="140" height="140" alt="">
+          </div>
+          <h4 class="fw-normal">Stephanie A.</h4>
+          <p class="fst-italic">"Unparalleled learning! Rich, interactive courses and insightful guidance. This platform has been instrumental in my continuous education journey. Highly recommended for knowledge seekers."</p>
+        </div>
+        <div class="d-none d-lg-block col-lg-4 px-3 py-3 text-light text-center">
+          <div class="d-flex align-items-center justify-content-center mb-2">
+            <img src="./media/images/pfp-3.png" class="img-fluid d-block rounded rounded-circle" width="140" height="140" alt="">
+          </div>
+          <h4 class="fw-normal">Maxwell C.</h4>
+          <p class="fst-italic">"Exceptional experience! Engaging modules, user-friendly interface, and comprehensive support empowered my professional growth. Highly recommend this platform."</p>
+        </div>
+      </div>
   
+    </div>
+
+    <!-- Footer Section -->
+    <div class="px-lg-5">
+      <footer class="py-1">
+        <div class="d-flex flex-column flex-lg-row px-4 p-lg-0">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Service</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Online Classes</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Online quizzes</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Resources</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Practicals</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>About</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our story</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Benefits</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Team</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Career</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Help</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn-purple" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
 
   <script src="./bootstrap.min.js"></script>
 </body>
