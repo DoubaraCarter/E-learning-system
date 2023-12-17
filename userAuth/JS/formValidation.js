@@ -3,22 +3,6 @@ const emailEl = document.querySelector('#email');
 const passwordEl = document.querySelector('#password');
 const confirmPasswordEl = document.querySelector('#confirm-password');
 const form = document.querySelector('#content');
-const dept = document.getElementById('departments');
-const url = "../JS/courses.json";
-
-
-async function department(){
-    const response = await fetch(url)
-    const data = await response.json()
-    for(let i = 0; i < data[0].Babcock.length;i++){
-        dept.innerHTML +=`
-        <option>${data[0].Babcock[i]}</option>    
-        `
-    }
-}
-department()
-
-
 
 const checkUsername = () => {
 

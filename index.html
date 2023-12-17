@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body style="overflow-x: hidden;">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-light py-3 position-sticky sticky-top border border-bottom" aria-label="Offcanvas navbar large">
       <div class="px-lg-5 container-fluid">
@@ -39,7 +40,7 @@
             </ul>
             <div class="col-md-3 text-end">
               <button type="button" class="btn-outline-purple px-3 py-1 me-2">Login</button>
-              <button type="button" class="btn-purple px-3 py-1">Sign-up</button>
+              <a href="./userAuth/HTML/signUp.html"><button type="button" class="btn-purple px-3 py-1">Sign-up</button></a>
             </div>
           </div>
         </div>
@@ -49,10 +50,10 @@
     <!-- Hero Section -->
     <div class="col-xxl-8 pt-5 px-2 px-lg-5 bg-purple" style="height: 100vh;">
       <div class="d-flex flex-column flex-lg-row-reverse align-items-center g-5 py-4">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-left">
           <img src="./media/images/undraw_online_learning_re_qw08.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6" data-aos="fade-right">
           <h1 class="display-4 fw-bold text-light mb-3 text-center text-lg-start">Improve your online learning experience</h1>
           <p class="text-light text-center text-lg-start">Empower your journey with our intuitive Learning Management System. Unlock knowledge, engage in interactive courses, and achieve academic excellence.</p>
           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start gap-2">
@@ -69,13 +70,13 @@
     <div class="text-center text-lg-start px-3 px-lg-5 py-2 py-lg-5">
     
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center py-5">
-          <div class="col d-flex flex-column align-items-center align-items-lg-start gap-2">
+          <div class="col d-flex flex-column align-items-center align-items-lg-start gap-2" data-aos="fade-right">
             <h1 class="fw-bold text-body-emphasis">Navigating Success: Embracing E-learnings Advantages</h1>
             <p class="">Discover a transformative learning experience with our dynamic platform. Engage in interactive courses and resources, receiving personalized support. Thrive in an ever-evolving world of knowledge and skills with our commitment to excellence.</p>
             <button class="btn-outline-purple py-2 px-3 mb-4 m-lg-0">Learn More</button>
           </div>
     
-          <div class="col">
+          <div class="col" data-aos="fade-left">
             <div class="row row-cols-1 row-cols-sm-2 g-4">
               <div class="col d-flex flex-column gap-2">
                 <div class="bg-light-purple d-flex align-items-center justify-content-center p-1 w-100">
@@ -129,7 +130,7 @@
           <div class="">
       
             <div class="d-flex ps-2 flex-column flex-lg-row align-content-center justify-content-between">
-              <div class="col-3" style="width: 350px;">
+              <div class="col-3" style="width: 350px;" >
                 <div class="card shadow-sm w-100 h-100">
                   <img src="./media/images/machine-learning.jpg" height="225" width="100%" alt="">
                   <div class="card-body">
@@ -176,21 +177,21 @@
       </div>
 
       <div class="d-flex flex-column flex-lg-row justify-content-lg-between py-4 bg-light-purple rounded rounded-4">
-        <div class="col-lg-4 px-3 py-3 text-light text-center">
+        <div class="col-lg-4 px-3 py-3 text-light text-center" data-aos="flip-left">
           <div class="d-flex align-items-center justify-content-center mb-2">
             <img src="./media/images/pfp-1.png" class="img-fluid d-block rounded rounded-circle" width="140" height="140" alt="">
           </div>
           <h4 class="fw-normal">Richard M.</h4>
           <p class="fst-italic">"It transformed my career. Engaging content, interactive features, and expert guidance made learning enjoyable and effective. Highly recommended!"</p>
         </div>
-        <div class="d-none d-lg-block col-lg-4 px-3 py-3 text-light text-center">
+        <div class="d-none d-lg-block col-lg-4 px-3 py-3 text-light text-center" data-aos="flip-left">
           <div class="d-flex align-items-center justify-content-center mb-2">
             <img src="./media/images/pfp-2.png" class="img-fluid d-block rounded rounded-circle" width="140" height="140" alt="">
           </div>
           <h4 class="fw-normal">Stephanie A.</h4>
           <p class="fst-italic">"Unparalleled learning! Rich, interactive courses and insightful guidance. This platform has been instrumental in my continuous education journey. Highly recommended for knowledge seekers."</p>
         </div>
-        <div class="d-none d-lg-block col-lg-4 px-3 py-3 text-light text-center">
+        <div class="d-none d-lg-block col-lg-4 px-3 py-3 text-light text-center" data-aos="flip-left">
           <div class="d-flex align-items-center justify-content-center mb-2">
             <img src="./media/images/pfp-3.png" class="img-fluid d-block rounded rounded-circle" width="140" height="140" alt="">
           </div>
@@ -259,5 +260,14 @@
     </div>
 
   <script src="./bootstrap.min.js"></script>
+  <!-- Animation Package -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 200,
+      duration: 1000
+    });
+  </script>
 </body>
 </html>
